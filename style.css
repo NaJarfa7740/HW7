@@ -1,0 +1,272 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*-------menubar css style start----*/
+a{
+    text-decoration: none;
+    color: white;
+    font-style:bold;
+    
+    
+}
+a:hover{
+    background-color: darkmagenta;
+    padding: 10px;
+    border-radius: 25px;
+      }
+
+.menu {
+    float:right;
+    list-style:none;
+}
+.menu li{
+
+    display: inline-block;
+    margin-right:10px;
+    font-size: 14px;
+    color:chartreuse;
+    text-transform: uppercase;
+    margin-top:20px;
+    margin-right: 50px;
+    
+}
+h1{
+    text-shadow: -3px 2px 5px rgb(158, 158, 216);
+    color:white;
+    text-align: center;
+    margin-top:70px;
+}
+.banner{
+    background-image: url(img/poto3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    height: 600px;
+    width: 100%;
+}
+.box1{
+    margin-top:50px;
+    margin-left:500px;
+    height: 300px;
+    width: 300px;
+    box-shadow:  5px 5px 5px blue;
+    position: center;
+    
+}
+
+.box1 img{
+    width: 100%;
+    height: 100%;
+} 
+/*---menubar css end------*/
+
+/*------shadow csss start------*/
+.tab{
+    float:left;
+    display: flex;
+}
+
+.skew{
+    height: 200px;
+    width: 300px;
+    background-color:brown;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-bottom:20px;
+    position: relative;
+
+}
+.skew::before{
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom:10px;
+    width: 90%;
+    height: 30px;
+    background-color: black;
+    transform-origin: left;
+    transform: skewY(5deg);
+    z-index:-1;
+    filter: blur(5px);
+
+
+
+}
+
+.skew1{
+    height: 200px;
+    width: 300px;
+    background-color: blueviolet;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-bottom:20px;
+    position: relative;
+
+}
+.skew1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 60%;
+    height: 30px;
+    background-color: black;
+    transform-origin: right;
+    transform: skewY(-5deg);
+    z-index:-1;
+    filter: blur(5px);
+
+}
+.skew2{
+    height: 200px;
+    width: 300px;
+    background-color:crimson;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-bottom:20px;
+    position: relative;
+
+}
+
+.skew2::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 60%;
+    height: 30px;
+    background-color: black;
+    transform-origin: right;
+    transform: skewY(-5deg);
+    z-index:-1;
+    filter: blur(5px);
+
+}
+
+.skew2::after{
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom:10px;
+    width: 90%;
+    height: 10px;
+    background-color: black;
+    transform-origin: left;
+    transform: skewY(5deg);
+    z-index:-1;
+    filter: blur(5px);
+
+}
+.tab p{
+    margin:10px;
+    overflow: hidden;
+    
+}
+.skew p{
+    margin: 10px;
+    overflow: hidden
+}
+.skew1 p{
+    margin: 10px;
+    overflow: hidden
+
+}
+.skew2 p{
+    margin: 10px;
+    overflow: hidden
+
+}
+
+.skew3{
+    height: 200px;
+    width: 300px;
+    background-color: peru;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-bottom:20px;
+    position: relative;
+
+}
+
+.skew3::before{
+    content: "";
+    position: absolute;
+    left: 5%;
+    bottom:-50px;
+    width: 90%;
+    height: 20%;
+    background-color: black;
+    border-radius: 50%;
+    z-index:-1;
+    filter: blur(15px);
+
+}
+#transition{
+    height:300px;
+    width:100%;
+    background-color:rgb(187, 20, 61);
+    margin-top: 400px;
+    position: absolute;
+ 
+
+
+}
+
+.shadow-full{
+
+    height:200px;
+    width: 300px;
+    background-color:rgb(187, 20, 61);
+    margin-top: 20px;
+    margin-bottom: 100px;
+    position: relative;
+    border-radius: 25px;
+    margin-left: 500px;
+    box-shadow: -15px -15px 15px rgba(232, 231, 236, 0.2), inset -15px -15px 15px rgba(232, 231, 236, 0.2),inset  -15px -15px 15px rgba(0,0,0,0.3);
+
+}
+/*------shadow csss end------*/
+
+/*------transion--------*/
+.tran{
+    height: 150px;
+    width: 200px;
+    background-image: url(img/poto2.jpg);
+    position:relative;
+    margin-top: 800px;
+    margin-left: 550px;
+    transition-property: all;
+    transition:1s;
+    transition-duration: 3s;
+
+}
+.tran:hover{
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    transform:rotate(180deg);
+    border-radius: 50%;
+}
+
+
+/*-----sprit image css start------*/
+#sprit{
+    height: 100px;
+    width:100%;
+}
+
+.sprit{
+    height: 56px;
+    width:56px;
+    background-image: url(img/sprit.jpg);
+    background-repeat: no-repeat;
+    margin-top:100px;
+    margin-left:610px;
+  
+   
+}
+
+/*-----sprit image css end------*/
+
